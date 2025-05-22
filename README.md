@@ -41,7 +41,7 @@ Install from the PowerShell Gallery:
 ```powershell
 Install-Module -Name TreePlus
 ```
-
+---
 ## Usage examples
 ```powershell
 # Basic Tree of folders Only
@@ -66,7 +66,54 @@ Show-Tree -Path "." -ShowFiles -MarkdownOutput -OutputFile "tree.md"
 Show-Tree -Path "." -ShowFiles -ToClipboard
 
 ```
+---
 
+## Screenshots
+
+### 🌙 Dark Theme with Emojis
+![Dark Theme](assets/dark-theme.png)
+
+---
+
+## 📁 Example Output
+
+This example demonstrates the output of `Show-Tree` in Markdown mode.
+
+<details>
+<summary>📂 <code>.\Documents\GitHub\ControlUpgrade\</code> (click to expand)</summary>
+
+```markdown
+# Directory Tree: .\Documents\GitHub\ControlUpgrade\
+- .gitattributes
+- .gitignore
+- CONTRIBUTING.md
+- ControlUpgrade.sln
+- LICENSE.txt
+- README.md
+- SECURITY.md
+- .github
+  - ISSUE_TEMPLATE
+- ControlUpgrade
+  - AboutWindow.xaml
+  - AboutWindow.xaml.cs
+  - App.xaml
+  - App.xaml.cs
+  - AssemblyInfo.cs
+  - ControlUpgrade.csproj
+  - License.txt
+  - MainWindow.xaml
+  - MainWindow.xaml.cs
+  - Slogo.ico
+  - Properties
+  - Themes
+- screenshots
+  - MainMenu_Dark.png
+  - MainMenu_Light.png
+  - RegistryOpen.png
+  - UpgradeBlock.png
+
+```markdown
+</details>
 ## Tests
 ```powershell
 Invoke-Pester -Path .\tests
