@@ -2,8 +2,6 @@
 
 **TreePlus** is a PowerShell module that displays a tree-like structure of folders (and optionally files) with support for emojis, color-coded file types, clipboard export, and markdown output—ideal for use in documentation, terminals, or GitHub READMEs.
 
-> 📦 Compatible with Windows PowerShell 5.1 and PowerShell 7+, but emoji support works best in PowerShell 7+ or any terminal that supports UTF-8 and Unicode emojis.
-
 ---
 
 ## ✨ Features
@@ -15,6 +13,23 @@
 - 📋 Clipboard export support
 - 🗂️ Depth control, file filtering, hidden file visibility
 - 🧪 Built-in Pester tests
+
+---
+
+## 💡 Why TreePlus?
+PowerShell’s built-in tree command is dated and lacks modern features. TreePlus was built to provide a cleaner, richer, and more customizable tree-view experience. Here's what sets TreePlus apart:
+
+Feature	TreePlus ✅	Legacy Tree ❌
+Emoji support (📁 📄)	Yes	No
+Markdown export	Yes	No
+Clipboard integration	Yes	No
+Color-coded extensions	Yes	No
+File size display	Yes	No
+Hidden item handling	Yes	No
+Exclude folders	Yes	No
+Extension filters	Yes	No
+
+>💬 Note: Emoji support requires PowerShell 7+ and a compatible font. PowerShell 5.x typically does not render emojis properly in the terminal.
 
 ---
 
