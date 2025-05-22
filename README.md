@@ -112,6 +112,7 @@ This example demonstrates the output of `Show-Tree` in Markdown mode.
   - RegistryOpen.png
   - UpgradeBlock.png
 ```
+</details>
 
 ## Emoji Support
 
