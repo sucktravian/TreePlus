@@ -71,3 +71,7 @@ Use -PlainAscii to disable emojis if needed:
 ```powershell
 Show-Tree -Path "." -PlainAscii
 ```
+
+## 🙌 Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
