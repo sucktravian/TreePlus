@@ -111,13 +111,8 @@ This example demonstrates the output of `Show-Tree` in Markdown mode.
   - MainMenu_Light.png
   - RegistryOpen.png
   - UpgradeBlock.png
-
-```markdown
-</details>
-## Tests
-```powershell
-Invoke-Pester -Path .\tests
 ```
+</details>
 
 ## Emoji Support
 
