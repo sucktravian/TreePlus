@@ -30,13 +30,44 @@ Install-Module -Name TreePlus
 # Basic Tree of folders Only
 Show-Tree -Path "C:\Projects"
 
-"Include file and file sizes
+# Include file and file sizes
 Show-Tree -Path "C:\Projects" -ShowFiles -ShowFileSizes
 
+# Limit tree depth
+Show-Tree -Path "C:\Projects" -Depth 2
+
+# Filter by Extension
+Show-Tree -Path "C:\Scripts" -ShowFiles -IncludeExtensions ".ps1", ".psm1"
+
+# Exclude Folders
+Show-Tree -Path "." -ExcludeFolders ".git", "node_modules"
+
+# Output to MarkDown for README etc
+Show-Tree -Path "." -ShowFiles -MarkdownOutput -OutputFile "tree.md"
+
+# Copy Tree to Clipboard
+Show-Tree -Path "." -ShowFiles -ToClipboard
 
 ```
 
 ## Tests
 ```powershell
 Invoke-Pester -Path .\tests
+```
+
+## Emoji Support
+
+Emojis (📁, 📄) are only shown if:
+
+-PlainAscii is not used
+
+-MarkdownOutput is not used
+
+PowerShell 7+ (with UTF-8 support) is required for emoji output to display correctly in most terminals
+
+In Windows PowerShell 5.1, emojis may not render correctly or at all
+
+Use -PlainAscii to disable emojis if needed:
+```powershell
+Show-Tree -Path "." -PlainAscii
 ```
