@@ -3,6 +3,10 @@ function Show-Tree {
 .SYNOPSIS
     Displays a tree-like structure of folders and optionally files.
 
+.EXAMPLE
+Show-Tree -Path "C:\Projects" -ShowFiles -MarkdownOutput -OutputFile "tree.md"
+Generates a markdown file with the directory tree for the C:\Projects folder including files.
+
 .DESCRIPTION
     Recursively lists folder structures using ASCII-style connectors, with optional emojis, file filters,
     extension-based color themes, and support for clipboard or Markdown output.
